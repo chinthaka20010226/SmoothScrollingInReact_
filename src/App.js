@@ -2,6 +2,7 @@
 import { useRef } from 'react';
 
 import './App.css';
+import ScrollToTop from './Components/ScrollToTop';
 
 function App() {
   // initialize useRef hook
@@ -18,6 +19,7 @@ function App() {
 
   return (
     <div className="App">
+      <ScrollToTop />
       <div className='hero'>
         <ul>
           <li onClick={() => scrollToSection(services)} className='link'>Services</li>
